@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dom.css">
+    <title>Dom</title>
+    <style>
+        .error{
+            visibility: hidden;
+        }
+
+        .msg{
+            visibility: hidden;
+            background-color: black;
+            padding: 10px 35px;
+        }
+    </style>
+   
+</head>
+<body>
+    <main>
+        <div class="h1">
+            <h1>Welcome to &#9829; calculator software</h1>
+           <p>Get your own love result instantly <span>*</span></p>
+        </div>
+        <div class="top">
+            <div class="middle">
+                <div class="input1">
+                    <p>*Your name</p>
+                    <input type="text" class="person" placeholder="Enter your name"> 
+                </div>
+                <div class="input2">
+                    <p>*Your partner's name</p>
+                    <input type="text" class="lover" placeholder="Enter your partner's name">
+                </div>
+            </div>
+
+        </div>
+        <div class="bottom">
+            <button onclick="getInput()">&#10084;Calculate&#10084;</button>
+        </div>
+        <h3 class="msg">Message</h3>
+
+    </main>
+
+    <script>
+ 
+         function getInput(){
+            var person = document.querySelector(".person").value;
+            var lover = document.querySelector(".lover").value
+           
+         if(person.length  === 0 || lover.length === 0 ){
+            document.querySelector(".msg").style.visibility = "visible"
+            document.querySelector(".msg").style.color = "red"
+            document.querySelector(".msg").innerHTML = "Both names are required!"
+         }
+        else if(person.length > lover.length){
+            document.querySelector(".msg").style.visibility = "visible"
+            document.querySelector(".msg").style.color = "green"
+            document.querySelector(".msg").innerHTML = "You're bonded together forever "
+           
+         }
+         else if(person.length < lover.length){
+            document.querySelector(".msg").style.visibility = "visible"
+            document.querySelector(".msg").style.color = "purple"
+            document.querySelector(".msg").innerHTML = "Your partner is playing you."
+           
+         }
+
+         else{
+            document.querySelector(".msg").style.visibility = "visible"
+            document.querySelector(".msg").style.color = "orange"
+            document.querySelector(".msg").innerHTML = "Work on your spiritual problem first"
+         }
+       
+         }
+      
+    </script>
+ </body>
+ </html>
+    

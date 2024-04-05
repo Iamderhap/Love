@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    background: linear-gradient(red, orange);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.h1{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.h1 h1{
+    color: white;
+    font-weight: 400px;
+    font-size: 60px;
+}
+.h1 p{
+    color: white;
+    font-weight: 400px;
+    font-size: 30px;
+}
+.middle{
+    display: flex;
+    gap: 20px;
+}
+.middle:hover{
+    cursor: pointer;
+}
+.middle input{
+    width: 100%;
+    padding: 10px;
+    padding: 5px 10px;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.bottom{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+.bottom button{
+    border-radius: 20px;
+    border: none;
+}
+.input1 input{
+    border-radius: 20px;
+    border: none;
+}
+.input2 input{
+    border-radius: 20px;
+    border: none;
+}
+.input1 p{
+    color: white;
+}
+.input2 p{
+    color: white;
+}
+.input1 input{
+    text-align: center;
+    background-color: rgba(235, 198, 204, 0.729);
+}
+.input2 input{
+    text-align: center;
+    background-color: rgba(235, 198, 204, 0.729);
+}
+button{
+    color: red;
+    font-size: 20px;
+    padding: 10px;
+}
+.input1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.input2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+@media screen and (max-width:950px){
+    .h1 h1{
+        width: 80%;
+        font-size: 35px;
+    }
+    .middle{
+        gap: 20px;
+        flex-direction: column;
+    }
+    .input1{
+        gap: 10px;
+        
+    }
+    .input1 input{
+        font-size: 20px;
+    }
+  
+    .input1 p{
+        font-size: 30px;
+    }
+    .input2 input{
+        font-size: 20px;
+    }
+    .input2 p{
+        font-size: 30px;
+    }
+    .input2{
+      gap: 10px;
+    }
+    .bottom{
+        gap: 30px;
+    }
+}
